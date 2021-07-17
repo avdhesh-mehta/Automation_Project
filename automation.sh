@@ -38,7 +38,7 @@ if [[ ! -e /var/www/html/inventory.html ]]; then
     touch /var/www/html/inventory.html
     #echo "<html><head>Inventory</head><body>"
     #echo "<th><td>Log Type</td><td>Time Created</td><td>Type</td><td>Size</td></th>" >> /var/www/html/inventory.html
-    echo "Log Type:Time Created:Type:Size" | tr : '\t\t' > /var/www/html/inventory.html
+    echo "<pre>Log Type:Time Created:Type:Size" | tr : '\t\t' > /var/www/html/inventory.html
 fi
 
 
