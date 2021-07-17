@@ -55,5 +55,5 @@ echo "httpd-logs:${timestamp}:tar:${filesize}" | tr : '\t\t' >> /var/www/html/in
 
 #Create cron job if does not exist
 if [[ ! -e /etc/cron.d/automation ]]; then
-    echo "0 0 * * * /root/Automation_Project/automation.sh && rm -rf /var/log/apache2/*.log" > /etc/cron.d/automation
+    echo "0 0 * * * root /root/Automation_Project/automation.sh && rm -rf /var/log/apache2/*.log" > /etc/cron.d/automation
 fi
